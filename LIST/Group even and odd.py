@@ -1,9 +1,5 @@
 n = list(map(int,input("Enter numer :").split()))
-
 even = list(x for x in n if x % 2 == 0)
 odd = list(x for x in n if x % 2 != 0)
-
-
-
 print(sum(even))
 print(sum(odd))
