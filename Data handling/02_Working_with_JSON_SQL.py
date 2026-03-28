@@ -1,15 +1,15 @@
-# ============================================================
+
 # What is SQL?
-# ============================================================
+
 
 # SQL = Structured Query Language
 # Used to store, manage, and query data in databases
 # Examples: MySQL, PostgreSQL, SQLite
 
 
-# ============================================================
+
 # What is JSON?
-# ============================================================
+
 
 # JSON = JavaScript Object Notation
 # Used for storing and exchanging data
@@ -17,9 +17,9 @@
 # {"name": "Alice", "age": 25}
 
 
-# ============================================================
+
 # Why JSON is important (ML / Data Science)
-# ============================================================
+
 
 # - APIs return data in JSON
 # - Many datasets are JSON
@@ -27,9 +27,9 @@
 # - Works well with Python
 
 
-# ============================================================
+
 # Load JSON using Pandas
-# ============================================================
+
 
 import pandas as pd
 
@@ -37,9 +37,9 @@ df = pd.read_json("train.json")   # read JSON file
 print(df.head())
 
 
-# ============================================================
+
 # Connect to MySQL Database
-# ============================================================
+
 
 # Install once:
 # pip install mysql-connector-python
@@ -56,9 +56,9 @@ conn = mysql.connector.connect(
 print("Connected to MySQL")
 
 
-# ============================================================
+
 # Run SQL Queries with Pandas
-# ============================================================
+
 
 # 1. Cities in India
 df_city = pd.read_sql_query(
@@ -79,9 +79,9 @@ df_lang = pd.read_sql_query(
 print(df_lang.head())
 
 
-# ============================================================
+
 # Close Connection
-# ============================================================
+
 
 conn.close()
 print("Connection closed")

@@ -1,6 +1,13 @@
-# ============================================================
+# CSV  → comma separated
+# TSV  → tab separated (\t)
+# read_csv() → main function for loading data
+
+# Most useful params:
+# usecols, dtype, parse_dates, na_values, chunksize
+
+
 # Opening a CSV file (Local)
-# ============================================================
+
 
 import pandas as pd
 
@@ -8,18 +15,18 @@ df = pd.read_csv("testdataset.csv")   # Read local CSV
 print(df.head())
 
 
-# ============================================================
+
 # Opening a CSV file from URL (Direct - Best)
-# ============================================================
+
 
 url = "https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv"
 df = pd.read_csv(url)
 print(df.head())
 
 
-# ============================================================
+
 # Opening a CSV using requests (Advanced)
-# ============================================================
+
 
 import requests
 from io import StringIO
@@ -32,9 +39,9 @@ df = pd.read_csv(data)
 print(df.head())
 
 
-# ============================================================
+
 # TSV (Tab Separated Values)
-# ============================================================
+
 
 pd.read_csv(
     "movie_titles_metadata.tsv",
@@ -43,9 +50,9 @@ pd.read_csv(
 )
 
 
-# ============================================================
+
 # Important Parameters in pd.read_csv()
-# ============================================================
+
 
 # 1. index_col → set column as index
 pd.read_csv("testdataset.csv", index_col="enrollee_id")
@@ -90,13 +97,3 @@ for chunk in pd.read_csv("testdataset.csv", chunksize=500):
     print("Chunk size:", chunk.shape)
 
 
-# ============================================================
-# SUMMARY
-# ============================================================
-
-# CSV  → comma separated
-# TSV  → tab separated (\t)
-# read_csv() → main function for loading data
-
-# Most useful params:
-# usecols, dtype, parse_dates, na_values, chunksize

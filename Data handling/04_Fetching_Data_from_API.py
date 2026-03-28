@@ -1,22 +1,22 @@
-# ============================================================
+
 # What is API?
-# ============================================================
+
 
 # API = Application Programming Interface
 # Used to send/receive data (mostly JSON)
 
 
-# ============================================================
+
 # Required Libraries
-# ============================================================
+
 
 import requests
 import pandas as pd
 
 
-# ============================================================
+
 # 1. Single API Request
-# ============================================================
+
 
 url = "API_URL_HERE"
 
@@ -34,9 +34,9 @@ else:
     print("Error:", res.status_code)
 
 
-# ============================================================
+
 # 2. Pagination (Multiple Pages)
-# ============================================================
+
 
 all_data = []
 
@@ -56,18 +56,18 @@ for page in range(1, 430):   # total pages
         all_data.append(df_temp)
 
 
-# ============================================================
+
 # 3. Combine Data
-# ============================================================
+
 
 df = pd.concat(all_data, ignore_index=True)
 
 print("Final shape:", df.shape)
 
 
-# ============================================================
-# 4. Save Data
-# ============================================================
 
-df.to_csv("movies_data.csv", index=False)
+# 4. Save Data
+
+
+df.to_csv("test_data.csv", index=False)
 print("Saved successfully")
