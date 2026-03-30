@@ -173,6 +173,3 @@ plt.title("Correlation Matrix (Titanic)")
 plt.show()
 
 
-# END
-
-print("\n 03_EDA COMPLETED SUCCESSFULLY!")

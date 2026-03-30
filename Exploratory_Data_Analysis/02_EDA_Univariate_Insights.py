@@ -137,6 +137,3 @@ summary['IQR'] = summary['75%'] - summary['25%']
 print(summary)
 
 
-# END
-
-print("\n 02_UNIVARIATE_ANALYSIS COMPLETED")
