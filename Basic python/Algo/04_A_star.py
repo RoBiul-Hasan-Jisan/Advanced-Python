@@ -32,9 +32,9 @@ def a_star(graph, h, start, goal):
                 heapq.heappush(open_list, (f_score, tentative_g, neighbor))
                 parent[neighbor] = cur_node
 
-    return None  # No path found
+    return None 
 
-# -------- USER INPUT --------
+
 n = int(input("Enter number of nodes: "))
 
 graph = {}
@@ -54,7 +54,7 @@ for node in graph:
 start = input("Enter starting node: ")
 goal = input("Enter goal node: ")
 
-# -------- RUN --------
+
 path = a_star(graph, h, start, goal)
 if path:
     print("A* Path:", path)
