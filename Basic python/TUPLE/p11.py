@@ -1,5 +1,0 @@
-t = (1, 2, 3, 2, 4, 1, 5, 3, 2)
-
-freq = {x: t.count(x) for x in t}
-
-print("Frequency of each element:", freq)
