@@ -84,7 +84,7 @@ print("Eigenvectors:\n", eigen_vectors)
 # ---------------------------
 # STEP 5: Visualize Eigenvectors in 3D
 # ---------------------------
-%pylab inline
+
 
 from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D

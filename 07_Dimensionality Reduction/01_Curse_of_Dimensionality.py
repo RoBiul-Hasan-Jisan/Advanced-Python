@@ -76,9 +76,4 @@
 # 5. Use Specialized Algorithms:
 #    - Tree-based models (Random Forest, XGBoost) often handle high dimensions better.
 
-# ==============================================
-# In summary:
-# The Curse of Dimensionality is not about avoiding high dimensions,
-# but about handling them carefully using reduction, selection, and 
-# better algorithms.
-# ==============================================
+#
